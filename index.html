@@ -447,60 +447,76 @@
 
     <div class="backdrop">
         <div class="modal">
-            <button class="close">
-                <svg class="close-form" width="12" height="12">
+            <button class="close" type="button">
+                <svg class="close-form" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
                 
           <form class="form" name="issue_report_form" autocomplete="off">
                       
-                <label class="label-title">
+                <p class="form-text-title">
                     Leave your contacts and we will call you back
-                </label>
+                </p>
                
-                <label class="label name-label">
+                <div class="label-wrap">
+                    <label class="label name-label">
                         Name
-                </label>
-                <div class="input-wrap">
-                    <svg class="form-name-svg" width="24" height="24">
-                        <use href="./images/icons.svg#icon-persona"></use>
-                    </svg>
-                    <input type="text" name="name" id="name" class="form-input" placeholder="">
+                    </label>
+                    <div class="input-wrap">
+                        <input type="text" name="name" id="user-name" class="form-input" placeholder="">
+                        <svg class="form-name-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-persona"></use>
+                        </svg>
+                        
+                    </div>
                 </div>
 
-                <label class="label tel-label">
-                    Phone
-                </label>
-                <div class="input-wrap">
-                    <svg class="form-name-svg" width="24" height="24">
-                       <use href="./images/icons.svg#icon-phone"></use>
-                    </svg>
-                    <input type="tel" name="contact_tel" id="phone" class="form-input"/>
+                <div class="label-wrap">
+                    <label class="label tel-label">
+                        Phone
+                    </label>
+                    <div class="input-wrap">
+                        <input type="tel" name="contact_tel" id="phone" class="form-input" />
+                        <svg class="form-name-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                       
+                    </div>
+                    
                 </div>
                
-                <label class="label mail-label" >
-                    Email
-                </label>
-                <div class="input-wrap">
-                    <svg class="form-name-svg" width="24" height="24">
-                        <use href="./images/icons.svg#icon-email"></use>
-                    </svg>
-                    <input type=" email" name="email" class="form-input"/>
+                <div class="label-wrap">
+                    <label class="label mail-label">
+                        Email
+                    </label>
+                    <div class="input-wrap">
+                        <input type=" email" name="email" class="form-input" />
+                        <svg class="form-name-svg" width="24" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
                 </div>
-
-                <label class="label comment-label">
-                    Comment
-                </label>
-                <textarea name="feedback" id="usercomments" class="textarea-popup" rows="5" placeholder="Text input"></textarea>
+                <div class="container-textarea">
+                    <label class="label comment-label" for="user-comments">
+                        Comment
+                    </label>
+                    <textarea name="feedback" id="user-comments" class="textarea-popup" rows="5" placeholder="Text input"></textarea>
+                </div>
 
                 <div class="checbox-wrap"> 
-                    <input class="checkbox" type="checkbox" name="form_privacy" id="form-usercomment"/>
-                    <label class="label-checkbox" for="form usercomments">I accept the terms and conditions of the
-                        <a href="#" class="accent"> Privacy Policy</a>  
+                    <input class="visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true"/>
+                    <label class="label-checkbox" for="user-privacy">I accept the terms and conditions of the
+                        <span class="accent"> 
+                            <svg class="accept-svg" width="" height="">
+                              <use href="./images/icons.svg#icon-vector"></use>
+                            </svg>
+                        </span>  
+                        <a href="#" class="link-checkbox">Privacy Policy</a>
+
                     </label>
                 </div>
-
+                
                 <button class="form-button" type="submit">Send</button>
 
             </form>
