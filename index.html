@@ -39,7 +39,7 @@
                   <a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                </li>
             </ul>
-        </address>
+         </address>
       </div>
 
     </header>
@@ -331,7 +331,6 @@
                     <div class="box">
                         <img src="./images/img23.jpg" alt="Taxi Service" width="360" height="300">
                     
-                        
                             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                                 Ecommerce App ·
                                 Cloud Storage App</p>
@@ -348,7 +347,6 @@
                     <div class="box">
                         <img src="./images/img24.jpg" alt="Screen Illustrations" width="360" height="300">
                     
-                        
                             <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                                 Ecommerce App ·
                                 Cloud Storage App</p>
@@ -365,7 +363,7 @@
                     <div class="box">
                     <img src="./images/img25.jpg" alt="Online Courses" width="360" height="300">
                 
-                            <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                        <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
                                 Ecommerce App ·
                                 Cloud Storage App</p>
                         
@@ -424,11 +422,91 @@
                     </li>
                 </ul>
             </div>
-           
-     </div>
-   
+
+            <div class="footer-container-form">
+              <p class="text-subcr" for="name">
+                    Subscribe
+              </p>
+               <form class="footer-form" name="issue_report_form"    autocomplete="off">
+                 <label class="label-mail-footer" name="footer_mail" >
+                     <input type="email" name="email" class="input-footer" placeholder="E-mail" />
+                 </label>
+                        
+                 <button class="footer-button" type="submit">Subscribe
+                        <svg class="footer-name-svg" width="24" height="24">
+                         <use href="./images/icons.svg#icon-frame"></use>
+                        </svg>
+                 </button>
+                        <div class="container-footer-button">
+                        </div>
+                </form>
+            </div>
           
-      
+     </div>  
     </footer>
+
+    <div class="backdrop">
+        <div class="modal">
+            <button class="close">
+                <svg class="close-form" width="12" height="12">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+                
+          <form class="form" name="issue_report_form" autocomplete="off">
+                      
+                <label class="label-title">
+                    Leave your contacts and we will call you back
+                </label>
+               
+                <label class="label name-label">
+                        Name
+                </label>
+                <div class="input-wrap">
+                    <svg class="form-name-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-persona"></use>
+                    </svg>
+                    <input type="text" name="name" id="name" class="form-input" placeholder="">
+                </div>
+
+                <label class="label tel-label">
+                    Phone
+                </label>
+                <div class="input-wrap">
+                    <svg class="form-name-svg" width="24" height="24">
+                       <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    <input type="tel" name="contact_tel" id="phone" class="form-input"/>
+                </div>
+               
+                <label class="label mail-label" >
+                    Email
+                </label>
+                <div class="input-wrap">
+                    <svg class="form-name-svg" width="24" height="24">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                    <input type=" email" name="email" class="form-input"/>
+                </div>
+
+                <label class="label comment-label">
+                    Comment
+                </label>
+                <textarea name="feedback" id="usercomments" class="textarea-popup" rows="5" placeholder="Text input"></textarea>
+
+                <div class="checbox-wrap"> 
+                    <input class="checkbox" type="checkbox" name="form_privacy" id="form-usercomment"/>
+                    <label class="label-checkbox" for="form usercomments">I accept the terms and conditions of the
+                        <a href="#" class="accent"> Privacy Policy</a>  
+                    </label>
+                </div>
+
+                <button class="form-button" type="submit">Send</button>
+
+            </form>
+       </div>
+    
+    </div>
+
 </body>
 </html>
