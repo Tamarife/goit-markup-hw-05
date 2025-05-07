@@ -840,12 +840,12 @@ textarea:focus {
 }
 
 .link-checkbox {
-    color: #404BBF;
+    color: #4d5ae5;
 }
 
 .input-check:checked + .label-checkbox > .accent {
     border: none;
-    fill: #ffffff;
+    fill: #F4F4FD;
     background-color: #404bbf;
 }
 
