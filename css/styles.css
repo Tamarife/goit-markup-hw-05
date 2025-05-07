@@ -629,16 +629,12 @@ placeholder {
     visibility: hidden;
 }
 
- 
-
-<!--comment-->
     
 .backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
-
 
 .backdrop:not(.is-open) .modal {
     transform: translate(-50%, -50%) scale(1.5);
@@ -769,13 +765,8 @@ textarea:focus {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input,
-textarea {
-    font-family: inherit;
-}
-
 .container-textarea {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .form-input::placeholder {
@@ -809,7 +800,6 @@ textarea {
     align-items: center;
     margin-bottom: 24px;
     gap: 8px;
-    
 }
 
 .label-checkbox {
@@ -840,16 +830,18 @@ textarea {
     align-items: center;
     justify-content: center;
     fill: transparent;
-    position: relative;
-    
+       
 }
 
 .accept-svg {
     transform: translateY(-10%);
     padding: 0;
-    position: absolute;
-}
    
+}
+
+.link-checkbox {
+    color: #404BBF;
+}
 
 .input-check:checked + .label-checkbox > .accent {
     border: none;
@@ -857,8 +849,8 @@ textarea {
     background-color: #404bbf;
 }
 
-.link-checkbox {
-    color: #404BBF;
+.input-check:focus + .label-checkbox>.accent {
+    background-color: #404bbf;
 }
 
 .form-button {
