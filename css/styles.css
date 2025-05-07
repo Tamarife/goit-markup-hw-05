@@ -597,8 +597,6 @@ placeholder {
     position: relative;
 }
 
- 
-
 .footer-form svg {
     position: absolute;
     width: 24px;
@@ -608,7 +606,6 @@ placeholder {
 
 .footer-name-svg {
     fill: #ffffff;
-    
 }
 
 .backdrop {
@@ -643,7 +640,6 @@ placeholder {
 }
 
 
-
 .backdrop:not(.is-open) .modal {
     transform: translate(-50%, -50%) scale(1.5);
 }
@@ -661,21 +657,9 @@ placeholder {
     padding: 72px 24px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
-    
 }
 
-
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 8px;
-    border: none;
-    background-color: #fcfcfc;
-    
-}
-
-.close {
+.modal-button {
     position: absolute;
     margin-left: 350px;
     top: 24px;
@@ -686,14 +670,14 @@ placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e7e9fc;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-form {
+.close-svg {
     position: absolute;
     fill: #0e0e0f;
     width: 8px;
@@ -701,14 +685,18 @@ placeholder {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close:hover,
-.close:focus,
-.close-form:hover,
-.close-form:focus {
+.modal-button:hover, 
+.modal-button:focus {
     background-color: #404bbf;
-    fill: #ffffff;
     border: none;
+    fill: #ffffff;
 }
+
+.modal-button:hover .close-svg,
+.modal-button:focus .close-svg {
+    fill: #ffffff;
+}
+
 
 .form-text-title {
     font-size: 16px;
@@ -720,12 +708,16 @@ placeholder {
     margin-bottom: 16px;
 }
 
-.label-wrap {
-    margin-bottom: 8px;
+.form {
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px;
+    border: none;
+    background-color: #fcfcfc;
 }
 
-label {
-    display: flex;
+.label-wrap {
+    margin-bottom: 8px;
 }
 
 .label {
@@ -739,7 +731,6 @@ label {
 
 .input-wrap {
     position: relative;
-
 }
 
 .form-input {
@@ -752,19 +743,24 @@ label {
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 
-.form-input:hover,
-.form-input:focus,
-.textarea-popup:hover,
-.textarea-popup:focus {
+
+.form-input:focus, 
+textarea:focus {
+    border-color: #4D5AE5;
+}
+
+.form-input:focus + .form-name-svg,
+.form-input:focus ~ .form-name-svg {
+    fill: #4d5ae5;
+}
+
+.textarea-popup:focus + .input-check {
     border-color: #4D5AE5;
 }
 
 .form-name-svg {
-    width: 18px;
-    height: 24px;
     position: absolute;
     left: 16px;
     top: 50%;
@@ -778,12 +774,8 @@ textarea {
     font-family: inherit;
 }
 
-.form-name-svg:hover {
-    fill: #4d5ae5;
-}
-
 .container-textarea {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .form-input::placeholder {
@@ -812,10 +804,20 @@ textarea {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checbox-wrap {
+.check-field {
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
     gap: 8px;
+    
+}
+
+.label-checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    
 }
 
 .visually-hidden {
@@ -824,15 +826,7 @@ textarea {
     pointer-events: none;
 }
 
-.label-checkbox {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    width: 100%;
-}
-
-.checkbox { 
+.checkbox {
     background-color: #e7e9fc;
 }
 
@@ -844,14 +838,23 @@ textarea {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     fill: transparent;
-
+    position: relative;
+    
 }
 
-.visually-hidden:checked + .accent {
-    background-color: #404bbf;
+.accept-svg {
+    transform: translateY(-10%);
+    padding: 0;
+    position: absolute;
+}
+   
+
+.input-check:checked + .label-checkbox > .accent {
     border: none;
-    fill: #F4F4FD;
+    fill: #ffffff;
+    background-color: #404bbf;
 }
 
 .link-checkbox {
@@ -874,6 +877,6 @@ textarea {
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 16px 32px;
-   
+    margin-top: 24px;
 }
 

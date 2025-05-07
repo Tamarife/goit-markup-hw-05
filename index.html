@@ -427,6 +427,7 @@
               <p class="text-subcr" for="name">
                     Subscribe
               </p>
+        
                <form class="footer-form" name="issue_report_form"    autocomplete="off">
                  <label class="label-mail-footer" name="footer_mail" >
                      <input type="email" name="email" class="input-footer" placeholder="E-mail" />
@@ -445,13 +446,14 @@
      </div>  
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop  is-open">
         <div class="modal">
-            <button class="close" type="button">
-                <svg class="close-form" width="8" height="8">
+            <button class="modal-button" type="button">
+                <svg class="close-svg" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+
             <p class="form-text-title">
                 Leave your contacts and we will call you back
             </p>
@@ -459,12 +461,15 @@
           <form class="form" name="issue_report_form" autocomplete="off">
                       
                 <div class="label-wrap">
-                    <label class="label name-label">
+                    <label class="label name-label" for="user-name">
                         Name
                     </label>
                     <div class="input-wrap">
-                        <input type="text" name="name" id="user-name" class="form-input" placeholder="">
-                        <svg class="form-name-svg" width="24" height="24">
+                        <input type="text" 
+                        name="user-name" 
+                        id="user-name" 
+                        class="form-input" />
+                        <svg class="form-name-svg" width="18" height="24">
                             <use href="./images/icons.svg#icon-persona"></use>
                         </svg>
                         
@@ -472,48 +477,57 @@
                 </div>
 
                 <div class="label-wrap">
-                    <label class="label tel-label">
+                    <label class="label tel-label" for="user-phone">
                         Phone
                     </label>
                     <div class="input-wrap">
-                        <input type="tel" name="contact_tel" id="phone" class="form-input" />
-                        <svg class="form-name-svg" width="24" height="24">
+                        <input type="tel" 
+                        name="contact_tel" 
+                        id="user-phone" 
+                        class="form-input" />
+                        <svg class="form-name-svg" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
-                       
                     </div>
                     
                 </div>
                
                 <div class="label-wrap">
-                    <label class="label mail-label">
+                    <label class="label mail-label" for="user-email">
                         Email
                     </label>
                     <div class="input-wrap">
-                        <input type=" email" name="email" class="form-input" />
-                        <svg class="form-name-svg" width="24" height="24">
+                        <input type=" email" 
+                        name="email"
+                        id="user-email"
+                        class="form-input" />
+                        <svg class="form-name-svg" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="container-textarea">
-                    <label class="label comment-label" for="user-comments">
+                    <label class="label comment-label" for="user-comment">
                         Comment
                     </label>
-                    <textarea name="feedback" id="user-comments" class="textarea-popup" rows="5" placeholder="Text input"></textarea>
+                    <textarea name="user-comment" id="user-comment" class="textarea-popup" rows="5" placeholder="Text input"></textarea>
                 </div>
 
-                <div class="checbox-wrap"> 
-                    <input class="visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true"/>
-                    <label class="label-checkbox" for="user-privacy" checked>I accept the terms and conditions of the
-                        <span class="accent"> 
-                            <svg class="accept-svg" width="8" height="8">
-                                <use href="./images/icons.svg#icon-vector"></use>
-                            </svg>
-                        </span>  
-                        <a href="#" class="link-checkbox">Privacy Policy</a>
-                        
+                <div class="check-field"> 
 
+                    <input class="input-check visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" />
+
+                    <label class="label-checkbox" for="user-privacy" checked>
+                        
+                      <span class="accent">
+                         <svg class="accept-svg" width="8" height="8">
+                            <use href="./images/icons.svg#icon-vector"></use>
+                         </svg>
+                      </span>
+                      I accept the terms and conditions of the
+                       
+                      <a href="#" class="link-checkbox">Privacy Policy</a>
+            
                     </label>
                 </div>
 
