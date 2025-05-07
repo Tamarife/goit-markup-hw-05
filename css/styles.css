@@ -632,6 +632,8 @@ placeholder {
     visibility: hidden;
 }
 
+ 
+
 <!--comment-->
     
 .backdrop.is-open {
@@ -652,15 +654,16 @@ placeholder {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
-    min-height: 564px;
+    min-height: 584px;
     background-color: #fcfcfc;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    
     padding: 72px 24px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
+    
 }
+
 
 .form {
     display: flex;
@@ -698,10 +701,10 @@ placeholder {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-form:hover,
-.close-form:focus,
 .close:hover,
-.close:focus {
+.close:focus,
+.close-form:hover,
+.close-form:focus {
     background-color: #404bbf;
     fill: #ffffff;
     border: none;
@@ -845,7 +848,7 @@ textarea {
 
 }
 
-.visually-hidden:checked+.accent {
+.visually-hidden:checked + .accent {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
