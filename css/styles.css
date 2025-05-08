@@ -577,7 +577,7 @@ button {
     min-width: 165px;
     height: 40px;
     border-radius: 4px;
-    padding: 8px 64px 8px 24px;
+    padding: 8px 24px;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -590,14 +590,8 @@ button {
     border: none;
 }
 
-.footer-form svg {
-    position: absolute;
-    margin-left: 117px;
-}
-
 .footer-name-svg {
     fill: #ffffff;
-    position: absolute;
     margin-left: 16px;
 }
 
