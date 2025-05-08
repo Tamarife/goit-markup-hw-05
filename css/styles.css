@@ -592,16 +592,13 @@ button {
 
 .footer-form svg {
     position: absolute;
-    width: 24px;
-    height: 24px;
-    margin-left: 117px; 
-  
+    margin-left: 117px;
 }
 
 .footer-name-svg {
     fill: #ffffff;
     position: absolute;
-    
+    margin-left: 16px;
 }
 
 .backdrop {
@@ -818,7 +815,6 @@ textarea:focus {
     align-items: center;
     justify-content: center;
     fill: transparent;
-       
 }
 
 .accept-svg {
