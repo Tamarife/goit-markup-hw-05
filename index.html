@@ -424,13 +424,15 @@
             </div>
 
             <div class="footer-container-form">
-              <p class="text-subcr" for="name">
+              <p class="text-subcr">
                     Subscribe
               </p>
         
                <form class="footer-form" name="issue_report_form"    autocomplete="off">
-                 <label class="label-mail-footer" name="footer_mail" >
-                     <input type="email" name="email" class="input-footer" placeholder="E-mail" />
+                 <label class="label-mail-footer" name="footer_mail" for="mail">
+                     <input type="email" name="email" 
+                     id="mail"
+                     class="input-footer" placeholder="E-mail" />
                  </label>
                         
                  <button class="footer-button" type="submit">Subscribe
@@ -511,7 +513,7 @@
                     <label class="label" for="user-comment">
                         Comment
                     </label>
-                    <textarea name="user-comment" id="user-comment" class="textarea-popup" rows="5" placeholder="Text input"></textarea>
+                    <textarea name="usercomment" id="user-comment" class="textarea-popup" rows="5" placeholder="Text input"></textarea>
                 </div>
 
                 <div class="check-field"> 

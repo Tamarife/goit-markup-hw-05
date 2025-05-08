@@ -171,6 +171,7 @@ button {
     display: flex;
     justify-content: center;
     padding: 188px 0;
+    margin: 0 auto;
 }
 
 .hero-container {
@@ -188,7 +189,8 @@ button {
     color: #ffffff;
     height: 120px;
     max-width: 496px;
-    margin: 0 auto;
+    margin-top: 320px;
+   
 }
 
 .hero-btn {
