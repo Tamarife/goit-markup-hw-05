@@ -158,7 +158,6 @@ button {
     position: relative;
 }
 
-
 .hero-section {
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office.jpg');
@@ -190,7 +189,7 @@ button {
     height: 120px;
     max-width: 496px;
     margin-top: 320px;
-        margin: auto;
+    margin: 0 auto;
 }
 
 .hero-btn {
@@ -227,12 +226,12 @@ button {
     width: 1px;
     height: 1px;
     margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .page-item {
@@ -591,6 +590,7 @@ placeholder {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    text-align: center;
     cursor: pointer;
     background-color: #4d5ae5; 
     border: none;
@@ -741,13 +741,11 @@ placeholder {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .form-input:focus, 
 textarea:focus {
     border-color: #4D5AE5;
 }
 
-.form-input:focus + .form-name-svg,
 .form-input:focus ~ .form-name-svg {
     fill: #4d5ae5;
 }
@@ -771,12 +769,6 @@ textarea:focus {
 
 .form-input::placeholder {
     color: #616161;
-}
-
-.form-label {
-    display: flex;
-    flex-direction: column;
-    transition: color 150ms ease-in-out;
 }
 
 .textarea-popup { 
@@ -852,7 +844,7 @@ textarea:focus {
 .input-check:focus + .label-checkbox>.accent {
     background-color: #404bbf;
 }
-
+ 
 .form-button {
     display: block;
     min-width: 169px;
